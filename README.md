@@ -29,7 +29,7 @@ def handleCommand(topic, msg):
         setPixel(color)
         lastPub = - device.meta['pubInterval']
 
-nic = uComMgr32.startWiFi('io7lux')
+nic = uComMgr32.startWiFi('io7neo')
 device = ConfiguredDevice()
 device.setUserCommand(handleCommand)
 
